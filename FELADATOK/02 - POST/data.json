@@ -1,0 +1,29 @@
+{
+  "diak": [
+    {
+      "nev": "a",
+      "kor": 22,
+      "iskola": "asd"
+    },
+    {
+      "nev": "s",
+      "kor": 3,
+      "iskola": "ff"
+    },
+    {
+      "nev": "d",
+      "kor": 3,
+      "iskola": "fff"
+    },
+    {
+      "nev": "zzz",
+      "kor": 6,
+      "iskola": "zzzzz"
+    },
+    {
+      "nev": "zzz",
+      "kor": 6,
+      "iskola": "zzzzzmmm"
+    }
+  ]
+}
