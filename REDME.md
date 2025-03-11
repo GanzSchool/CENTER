@@ -1,8 +1,12 @@
 
-## ✅ **1. Node.js telepítése a gépre**
+## Projekt mappa Letöltése
+FONTOS, HA LINKRE KATTINTASZ, FOGD A CTRL BILLENTYŰT!
 
 [📦 Mappa letöltése ZIP-ben](https://download-directory.github.io/?url=https://github.com/GanzSchool/CENTER/tree/main/FELADATOK/02%20-%20POST)
 
+## ✅ **1. Node.js telepítése a gépre**
+
+- .msi-t töltsd le
 
 - Menj a hivatalos oldalra:  
 
