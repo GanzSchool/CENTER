@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // 3) Végpont a diákok hozzáadásához (POST /api/diak)
-app.post("/api/diak", (req, res) => {
+app.post("/diak", (req, res) => {
   try {
     // a) Beolvaszuk a testből a JSON-t
     const ujDiak = req.body;

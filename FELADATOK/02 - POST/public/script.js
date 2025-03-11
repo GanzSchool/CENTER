@@ -1,5 +1,4 @@
-document.getElementById("sendButton").addEventListener("click", (event) => {
-    event.preventDefault(); // megakadályozza az esetleges újratöltést
+document.getElementById("sendButton").addEventListener("click", () => {
   
     // 1) Kinyerjük az input mezők értékeit
     const nameValue = document.getElementById("name").value;
@@ -9,7 +8,7 @@ document.getElementById("sendButton").addEventListener("click", (event) => {
     // 2) Összeállítjuk az elküldendő objektumot
     const diakAdat = {
       nev: nameValue,
-      kor: parseInt(ageValue, 10),
+      kor: parseInt(ageValue),
       iskola: schoolValue
     };
   
@@ -29,7 +28,7 @@ document.getElementById("sendButton").addEventListener("click", (event) => {
 
       })
       .catch(error => {
-        console.error("Hiba történt:", error);
+        console.log("Hiba történt:", error);
         alert("Hiba az adatok küldése során!");
       });
   });
