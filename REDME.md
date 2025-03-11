@@ -30,6 +30,7 @@ npm -v
 1. Hozz létre egy mappát. Fontos, hogy a projekt mappában ne legyen ékezet, mert az `npm` nem támogatja az ékezeteket!
 
 - Pl.: `projektem`
+- Illeszbe be a letöltött mappa tartalmát az újjonnan létrehozott projekt mappádba.
 
 2. Nyisd meg a mappádat a VS Codeban.
 
