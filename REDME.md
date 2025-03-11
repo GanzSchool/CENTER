@@ -5,7 +5,7 @@
 
 - Menj a hivatalos oldalra:  
 
-👉 `https://nodejs.org/en/download`
+> https://nodejs.org/en/download
    
 
 
