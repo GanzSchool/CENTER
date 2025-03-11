@@ -1,6 +1,7 @@
 
 ## ✅ **1. Node.js telepítése a gépre**
 
+[📦 Mappa letöltése ZIP-ben]([https://download-directory.github.io/?url=https://github.com/felhasznalonev/repositorynev/tree/main/mappa](https://github.com/GanzSchool/CENTER/tree/516af7110a08f70d451b90966a5e420228591bf3/FELADATOK/02%20-%20POST))
 
 
 - Menj a hivatalos oldalra:  
