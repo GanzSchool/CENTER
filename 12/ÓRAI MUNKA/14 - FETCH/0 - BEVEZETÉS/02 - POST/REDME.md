@@ -2,7 +2,7 @@
 ## Projekt mappa Letöltése
 FONTOS, HA LINKRE KATTINTASZ, FOGD A CTRL BILLENTYŰT!
 
-[📦 Mappa letöltése ZIP-ben](https://github.com/GanzSchool/CENTER/tree/13ff911055a830fc35c4a7e90267f399459337f4/12/%C3%93RAI%20MUNKA/14%20-%20FETCH/0%20-%20BEVEZET%C3%89S/02%20-%20POST)
+[DOWNLOAD PROJEKT FILE IN ZIP](https://download-directory.github.io/?url=https://github.com/GanzSchool/CENTER/tree/main/12/%25C3%2593RAI%2520MUNKA/14%2520-%2520FETCH/0%2520-%2520BEVEZET%25C3%2589S/02%2520-%2520POST)
 
 ## ✅ **1. Node.js telepítése a gépre**
 
