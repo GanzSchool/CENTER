@@ -24,7 +24,7 @@ npm -v
 
 1. Hozz létre egy mappát. Fontos, hogy a projekt mappában ne legyen ékezet, mert az `npm` nem támogatja az ékezeteket!
 
-- Pl.: `C:\Users\TeNeved\Documents\projektem`
+- Pl.: `projektem`
 
 2. Nyisd meg a mappáda a VS Studioban.
 
