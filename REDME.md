@@ -9,7 +9,7 @@
    
 
 
-- Telepítés után ellenőrizd a sikerességet:
+- Telepítés után ellenőrizd a sikerességet simán parancssorban:
 
 ```bash
 node -v
