@@ -26,7 +26,7 @@ npm -v
 
 - Pl.: `projektem`
 
-2. Nyisd meg a mappáda a VS Studioban.
+2. Nyisd meg a mappádat a VS Codeban.
 
 - Menj a projekt mappád nevére és jobb clickkel: **Open in itegrated Terminal**
 
