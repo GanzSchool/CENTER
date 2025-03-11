@@ -1,5 +1,3 @@
-Nagyon jó, köszönöm a pontosítást! Tehát **Windows-on szeretnél egy konkrét projekt mappába Node.js környezetet kialakítani**, hogy ott tudj dolgozni pl. npm csomagokkal, futtatni szervert, stb. Mutatom lépésről lépésre, hogyan csináld!
-
 ---
 
 ## ✅ **1. Node.js telepítése a gépre**
