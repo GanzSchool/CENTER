@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+    var numbers = []; // üres tömb
+
+    for (let i = 1; i <= 5; i++) { //50 - 100
+        numbers.push(i); // hozzáadás a tömbhöz
+    }
+
+        console.log("Feltöltött tömb:", numbers); 
+        */
+
+        /*
+    for (let index = 0; index < array.length; index++) {
+        push => egy adott elemet tudunk betölteni egy megadott tömbe.
+    }
+        /*
+
+        var numbers = [];
+
+for (var i = 0; i < 5; i++) {
+  var randomNum = Math.floor(Math.random() * 100) + 1; // 1 és 100 közötti véletlenszám
+  numbers.push(randomNum);
+}*/
+
+let numbers = [];
+
+for (let i = 0; i < 5; i++) {
+  var randomNum = Math.floor(Math.random() * (1500 - 1000+1)) + 1000; // 1 és 100 közötti véletlenszám
+  numbers.push(randomNum);
+}
+
+console.log("Véletlen számokkal feltöltött tömb:", numbers);
+
+
+
+
+    </script>
+</body>
+</html>
