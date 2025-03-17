@@ -1,0 +1,25 @@
+{
+    "autok": [
+      {
+        "marka": "Toyota",
+        "modell": "Corolla",
+        "evjarat": 2020
+      },
+      {
+        "marka": "Ford",
+        "modell": "Fiesta",
+        "evjarat": 2018
+      },
+      {
+        "marka": "Volkswagen",
+        "modell": "Golf",
+        "evjarat": 2019
+      },
+      {
+        "marka": "Honda",
+        "modell": "Civic",
+        "evjarat": 2021
+      }
+    ]
+  }
+  
