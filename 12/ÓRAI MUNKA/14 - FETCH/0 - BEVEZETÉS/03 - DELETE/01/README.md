@@ -57,7 +57,7 @@ npm init -y
 npm install express
 ```
 
-Ez létrehoz egy `node_modules` mappát (itt lesznek a csomagok) és a `package-lock.json` fájlt.
+> Ez létrehoz egy `node_modules` mappát (itt lesznek a csomagok) és a `package-lock.json` fájlt.
 
 ---
 
