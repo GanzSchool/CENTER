@@ -12,6 +12,7 @@ document.getElementById("deleteButton").addEventListener("click", () => {
       customerName: deleteName
     };
   
+    
     // 3) DELETE kérés küldése a szerver felé a "pizza.json" végponton.
     //    Így a fetch hívásban csak simán azt kell megadni: "pizza.json"
     
