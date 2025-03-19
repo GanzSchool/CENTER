@@ -3,6 +3,7 @@
 
 > Töltsd le egyenként a kódokat és helyezd el az alábbiak szerint:
 
+```pgsql
 projekt mappád neve/
 ├── pizza.json
 ├── server.js
@@ -10,6 +11,7 @@ projekt mappád neve/
     ├── index.html
     ├── script.js
     └── style.css
+```
 
 
 
