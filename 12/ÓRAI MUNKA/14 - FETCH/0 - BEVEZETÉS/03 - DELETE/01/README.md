@@ -21,7 +21,7 @@ projekt mappád neve/
 ## ✅ **2. Node.js környezet inicializálása a projekt mappában (package.json létrehozása)**
 
 **FONTOS**
-> hogy véletlenül se a public-ba csináld, mindenképp a gyökrben legyél és onnan add ki a parancsokat!
+> hogy véletlenül se a public-ba csináld, mindenképp a gyökrben legyél és onnan add ki a lenti parancsokat!
 
 ```pgsql
 projekt mappád neve/  < ---- EZ A GYÖKÉR MAPPA
@@ -33,17 +33,17 @@ projekt mappád neve/  < ---- EZ A GYÖKÉR MAPPA
     └── style.css
 ```
 
-> HA KIALAKÍTOTTAD EZT A PROJEKT STRUKTÚRÁT, AKKOR JOBB CLICK A GYÖRKÉ MAPPÁRA ÉS NYISD MEG A TERMINÁLBAN
+> HA KIALAKÍTOTTAD EZT A PROJEKT STRUKTÚRÁT, AKKOR JOBB CLICK A GYÖKÉR MAPPÁRA ÉS NYISD MEG A TERMINÁLBAN
 > INNEN ADD KI A LENTI HÁROM PARANCSOT!
 
 
-Ezzel a paranccsal létrehozod a **package.json** fájlt, ami nyilvántartja a projekt csomagjait, verzióját stb.:
+
 
 **ELSŐ PARANCS**
 ```bash
 npm init -y
 ```
-
+> Ezzel a paranccsal létrehozod a **package.json** fájlt, ami nyilvántartja a projekt csomagjait, verzióját stb.:
 > Az `-y` automatikusan elfogadja az alapértelmezett beállításokat (később szerkesztheted a fájlt).
 
 **Eredmény:** Létrejön a `package.json` fájl a mappában.
