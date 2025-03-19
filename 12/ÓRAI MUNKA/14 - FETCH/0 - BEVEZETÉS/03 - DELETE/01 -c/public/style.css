@@ -1,0 +1,68 @@
+/* Alap stílusok a teljes oldalra */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #ff7b00, #ff4500);
+}
+
+/* A központi konténer stílusa */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+/* Cím stílusa */
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Űrlap elemek csoportosítása */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Címkék stílusa */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Legördülő lista stílusa */
+select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Gomb stílusa */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #217dbb;
+}

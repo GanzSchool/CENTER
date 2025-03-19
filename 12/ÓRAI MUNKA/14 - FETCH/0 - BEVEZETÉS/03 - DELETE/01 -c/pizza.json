@@ -1,0 +1,19 @@
+{
+  "orders": [
+    {
+      "customerName": "Kovács Béla",
+      "pizzaType": "Margherita",
+      "size": "Medium"
+    },
+    {
+      "customerName": "Nagy Anna",
+      "pizzaType": "Pepperoni",
+      "size": "Large"
+    },
+    {
+      "customerName": "Szabó Péter",
+      "pizzaType": "Vegetarian",
+      "size": "Small"
+    }
+  ]
+}
