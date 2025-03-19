@@ -68,10 +68,11 @@ node server.js
 ```
 A szerver fut az valahanyas porton!
 ```
+---
 
-RROJEKT FILEOK:
+# **RROJEKT FILEOK:**
 
-index.html:
+> index.html:
 
 ```html
 <!DOCTYPE html>
@@ -97,12 +98,80 @@ index.html:
 </html>
 ```
 
-style.css
+> style.css
 
 ```css
+/* Alap stílusok a teljes oldalra */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ff7b00, #ff4500);
+  }
+  
+  /* A központi konténer stílusa */
+  .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+  }
+  
+  /* Cím stílusa */
+  h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Űrlap elemek csoportosítása */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Címkék stílusa */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Input mezők stílusa */
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  /* Gomb stílusa */
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #217dbb;
+  }
 ```
 
-pizza.json
+> pizza.json
 
 ```json
 {
@@ -127,7 +196,7 @@ pizza.json
   
 ```
 
-server.js
+> server.js
 
 ```js
 const express = require("express");
@@ -183,13 +252,13 @@ app.listen(PORT, () => {
 });
 ```
 
-script.js
+> script.js
 
 ```js
 // Eseményfigyelő hozzáadása a "deleteButton" gombhoz,
 // amely kattintásra elindítja a rendelés törlésének folyamatát.
-document.getElementById("deleteButton").addEventListener("click", (event) => {
-    event.preventDefault(); // Megakadályozza az oldal újratöltését
+document.getElementById("deleteButton").addEventListener("click", () => {
+    
   
     // 1) Lekérjük az input mező értékét, amely meghatározza a törlendő rendelést.
     //    Ebben az esetben a vásárló nevét használjuk az azonosításhoz.
@@ -202,28 +271,20 @@ document.getElementById("deleteButton").addEventListener("click", (event) => {
   
     // 3) DELETE kérés küldése a szerver felé a "pizza.json" végponton.
     //    Így a fetch hívásban csak simán azt kell megadni: "pizza.json"
-    fetch("pizza.json", {
-      method: "DELETE", // HTTP DELETE metódus, a törlés jelzésére
-      headers: {
-        "Content-Type": "application/json" // A küldött adat formátuma JSON
-      },
+    
+       // HTTP DELETE metódus, a törlés jelzésére
+      
+         // A küldött adat formátuma JSON
+      
       // Az objektumot JSON szöveggé alakítjuk, mielőtt elküldenénk
-      body: JSON.stringify(deleteData)
-    })
+     
       // A szerver válaszát JSON formátumra alakítjuk
-      .then(response => response.json())
-      .then(result => {
-        // Sikeres törlés esetén:
-        console.log("Szerver válasz:", result);
-        alert(result.message); // Megjelenítjük a szerver visszajelzését alert ablakban
-      })
-      .catch(error => {
+      
+        // Sikeres törlés esetén válasz:
+       
         // Hibakezelés: a hibát kiírjuk a konzolra, és értesítjük a felhasználót is.
-        console.error("Hiba történt:", error);
-        alert("Hiba történt a törlés során!");
-      });
+   
   });
-  
 ```
 
 
