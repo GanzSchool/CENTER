@@ -20,6 +20,19 @@ projekt mappád neve/
 
 ## ✅ **2. Node.js környezet inicializálása a projekt mappában (package.json létrehozása)**
 
+**FONTOS**
+> hogy véletlenül se a public-ba csináld, mindenképp a györkében legyél és onnan add ki a parancsokat!
+
+```pgsql
+projekt mappád neve/  < ---- EZ A GYÖKÉR MAPPA
+├── pizza.json    
+├── server.js   
+└── public/
+    ├── index.html
+    ├── script.js
+    └── style.css
+```
+
 Ezzel a paranccsal létrehozod a **package.json** fájlt, ami nyilvántartja a projekt csomagjait, verzióját stb.:
 
 ```bash
