@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pénztárgép - Optimális Visszajáró</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Alapresetek */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #ece9e6, #ffffff);
+      color: #333;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+    h1 {
+      background: #007bff;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.75rem;
+    }
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .left-panel, .right-panel {
+      flex: 1 1 300px;
+      padding: 1.5rem;
+      border-right: 1px solid #eee;
+    }
+    .right-panel {
+      border-right: none;
+      border-left: 1px solid #eee;
+    }
+    .section {
+      margin-bottom: 1.5rem;
+    }
+    .section h3 {
+      margin-bottom: 0.75rem;
+      color: #007bff;
+    }
+    /* Fizetett mezők elrendezése */
+    .paid-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .paid-group .form-group {
+      flex: 1 1 45%;
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 500;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+    .button-group {
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem;
+      background: #f7f7f7;
+    }
+    button {
+      flex: 1 1 auto;
+      margin: 0 0.5rem;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      background: #007bff;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    /* Kisebb kijelzőkhöz */
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+      .left-panel, .right-panel {
+        border: none;
+      }
+      .right-panel {
+        border-top: 1px solid #eee;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pénztárgép</h1>
+    <div class="main-content">
+      <!-- Bal oldal: Pénztár rész -->
+      <div class="left-panel">
+        <div class="section">
+          <h3>Fizetendő összeg</h3>
+          <p id="costDisplay" style="font-size: 1.3rem; font-weight: 500;"></p>
+        </div>
+        <div class="section">
+          <h3>Pénztár készlet</h3>
+          <div id="inventory"></div>
+        </div>
+        <div class="section">
+          <h3>Eredmény</h3>
+          <div id="result"></div>
+        </div>
+      </div>
+      <!-- Jobb oldal: Fizetett címletek -->
+      <div class="right-panel">
+        <div class="section">
+          <h3>Fizetett címletek</h3>
+          <div class="paid-group">
+            <!-- Címletek: 20000 Ft - 5 Ft -->
+            <div class="form-group">
+              <label for="paid_20000">20000 Ft</label>
+              <input type="number" id="paid_20000" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="paid_10000">10000 Ft</label>
+              <input type="number" id="paid_10000" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="paid_5000">5000 Ft</label>
+              <input type="number" id="paid_5000" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="paid_2000">2000 Ft</label>
+              <input type="number" id="paid_2000" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="paid_1000">1000 Ft</label>
+              <input type="number" id="paid_1000" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="paid_500">500 Ft</label>
+              <input type="number" id="paid_500" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="paid_200">200 Ft</label>
+              <input type="number" id="paid_200" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="paid_100">100 Ft</label>
+              <input type="number" id="paid_100" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="paid_50">50 Ft</label>
+              <input type="number" id="paid_50" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="paid_20">20 Ft</label>
+              <input type="number" id="paid_20" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="paid_10">10 Ft</label>
+              <input type="number" id="paid_10" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="paid_5">5 Ft</label>
+              <input type="number" id="paid_5" min="0" value="0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Gombok -->
+    <div class="button-group">
+      <button id="calculate">Visszajáró kiszámolása</button>
+      <button id="newTransaction">Új vásárlás</button>
+    </div>
+  </div>
+  
+  <script>
+    // Kezdeti készlet – minden címletből 200 db
+    const initialInventory = {
+      20000: 200,
+      10000: 200,
+      5000: 200,
+      2000: 200,
+      1000: 200,
+      500: 200,
+      200: 200,
+      100: 200,
+      50: 200,
+      20: 200,
+      10: 200,
+      5: 200
+    };
+
+    // Aktuális készlet (az eredeti értékekből indul)
+    let inventory = { ...initialInventory };
+
+    // Jelenlegi vásárlási összeg globálisan
+    let currentCost = 0;
+
+    // Készlet megjelenítése
+    function updateInventoryDisplay() {
+      const inventoryDiv = document.getElementById('inventory');
+      let html = '';
+      Object.keys(inventory)
+        .map(Number)
+        .sort((a, b) => b - a)
+        .forEach(coin => {
+          html += `<p>${coin} Ft: ${inventory[coin]} db</p>`;
+        });
+      inventoryDiv.innerHTML = html;
+    }
+
+    // Véletlenszerű vásárlási összeg generálása 10 000 és 100 000 Ft között, 5 Ft lépésekben
+    function generateRandomCost() {
+      const min = 10000;
+      const max = 100000;
+      const steps = Math.floor((max - min) / 5);
+      const randomStep = Math.floor(Math.random() * (steps + 1));
+      return min + randomStep * 5;
+    }
+
+    // Vásárlási összeg megjelenítése
+    function updateCostDisplay() {
+      currentCost = generateRandomCost();
+      document.getElementById('costDisplay').innerText = currentCost + " Ft";
+    }
+
+    // Greedy algoritmus a visszajáró kiszámolásához
+    function calculateChange(changeAmount) {
+      let remaining = changeAmount;
+      const changeCoins = {};
+      const tempInventory = { ...inventory };
+
+      const coins = Object.keys(tempInventory).map(Number).sort((a, b) => b - a);
+      for (const coin of coins) {
+        if (remaining <= 0) break;
+        let count = 0;
+        while (remaining >= coin && tempInventory[coin] > 0) {
+          remaining -= coin;
+          tempInventory[coin]--;
+          count++;
+        }
+        if (count > 0) {
+          changeCoins[coin] = count;
+        }
+      }
+      if (remaining === 0) {
+        // Frissítjük a valódi készletet
+        for (const coin in changeCoins) {
+          inventory[coin] -= changeCoins[coin];
+        }
+        return changeCoins;
+      } else {
+        return null;
+      }
+    }
+
+    // Fizetés összegyűjtése és készlet frissítése a bevitt értékekkel
+    function collectPayment() {
+      let totalPaid = 0;
+      const denominations = [20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5];
+      denominations.forEach(denom => {
+        const count = parseInt(document.getElementById(`paid_${denom}`).value, 10) || 0;
+        totalPaid += denom * count;
+        // Hozzáadjuk a befizetett darabszámot a készlethez
+        inventory[denom] += count;
+      });
+      return totalPaid;
+    }
+
+    document.getElementById('calculate').addEventListener('click', function() {
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = '';
+
+      const paidTotal = collectPayment();
+      if (paidTotal < currentCost) {
+        resultDiv.innerHTML = `<p style="color: red;">A befizetett összeg (${paidTotal} Ft) kevesebb, mint a vásárlás összege (${currentCost} Ft)!</p>`;
+        return;
+      }
+      const changeAmount = paidTotal - currentCost;
+      if (changeAmount === 0) {
+        resultDiv.innerHTML = '<p>Nincs visszajáró!</p>';
+        updateInventoryDisplay();
+        return;
+      }
+      const change = calculateChange(changeAmount);
+      if (change) {
+        let html = `<p>Visszajáró: ${changeAmount} Ft</p><ul>`;
+        Object.keys(change)
+          .map(Number)
+          .sort((a, b) => b - a)
+          .forEach(coin => {
+            html += `<li>${coin} Ft: ${change[coin]} db</li>`;
+          });
+        html += '</ul>';
+        resultDiv.innerHTML = html;
+      } else {
+        resultDiv.innerHTML = '<p style="color: red;">Nincs elegendő címlet/érme a visszajáróhoz!</p>';
+      }
+      updateInventoryDisplay();
+    });
+
+    document.getElementById('newTransaction').addEventListener('click', function() {
+      updateCostDisplay();
+      [20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5].forEach(denom => {
+        document.getElementById(`paid_${denom}`).value = 0;
+      });
+      document.getElementById('result').innerHTML = '';
+    });
+
+    // Kezdeti beállítások
+    updateCostDisplay();
+    updateInventoryDisplay();
+  </script>
+</body>
+</html>

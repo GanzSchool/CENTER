@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- CSP beállítás -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <div class="form-group">
+      <label for="regUsername">Username</label>
+      <input type="text" id="regUsername" placeholder="Enter username">
+    </div>
+    <div class="form-group">
+      <label for="regPassword">Password</label>
+      <input type="password" id="regPassword" placeholder="Enter password">
+    </div>
+    <button id="registerButton">Register</button>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+  <script src="register.js"></script>
+</body>
+</html>

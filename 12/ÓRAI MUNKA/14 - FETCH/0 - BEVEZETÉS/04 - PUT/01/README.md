@@ -284,11 +284,13 @@ document.getElementById("updateButton").addEventListener("click", () => {
     //    - updateName: a frissítendő rendelés azonosítója (vásárló neve)
     //    - newPizzaType: az új pizza típus
     //    - newSize: az új pizza mérete
-    const updateName = document.getElementById("updateName").value;
-    const newPizzaType = document.getElementById("newPizzaType").value;
-    const newSize = document.getElementById("newSize").value;
+
+    /* const updateName = document.getElementById("updateName").value;
+       const newPizzaType = document.getElementById("newPizzaType").value;
+       const newSize = document.getElementById("newSize").value; */
   
     // 2) Összeállítjuk a frissítéshez szükséges adatokat tartalmazó objektumot
+
     /*const updateData = {
       customerName: , 
       pizzaType: ,
@@ -297,13 +299,11 @@ document.getElementById("updateButton").addEventListener("click", () => {
   
     // 3) PUT kérés küldése a szerver felé a "pizza.json" végponton.
     //    A kérés utasítja a szervert, hogy frissítse a megadott rendelést az új adatokkal.
-     // HTTP PUT metódus a frissítési művelethez
+    // fetch metódus a frissítési művelethez (PUT)
       
-        // Az elküldött adat formátuma JSON
-      
+      // Az elküldött adat formátuma JSON
       // Az updateData objektumot JSON szöveggé alakítjuk, mielőtt elküldenénk a szervernek
-     
-       // A szerver válaszát JSON formátumra alakítjuk
+      // A szerver válaszát JSON formátumra alakítjuk
       
         // Sikeres frissítés esetén:
         //console.log("Szerver válasz:", result);
