@@ -502,7 +502,7 @@ li:hover {
 > HA KIALAKÍTOTTAD EZT A PROJEKT STRUKTÚRÁT, AKKOR JOBB CLICK A GYÖKÉR MAPPÁRA ÉS NYISD MEG A TERMINÁLBAN
 > INNEN ADD KI A LENTI HÁROM PARANCSOT!
 
-### **server konfiguráció létrehozása**
+### **Server konfiguráció létrehozása**
 **ELSŐ PARANCS**
 ```bash
 npm init -y
