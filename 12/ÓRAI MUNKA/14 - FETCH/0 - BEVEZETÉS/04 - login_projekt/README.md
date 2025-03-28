@@ -1,8 +1,4 @@
-Persze! Itt egy tiszta, strukturált **összefoglaló** arról, hogy **mi van most a projektedben**, **milyen fájlok vannak**, és **mi mire való** – REST szabvány szerint.
-
----
-
-## 🗂️ Projekt mappaszerkezet
+## Projekt mappaszerkezet
 
 ```pgsql
 projekt/
@@ -13,8 +9,8 @@ projekt/
     ├── register.html       → Regisztrációs felület
     ├── dashboard.html      → Felhasználói lista megjelenítés
     ├── style.css           → stílus
-    ├── login.js            → Login logika (fetch + kezelés)
-    ├── register.js         → Regisztráció logika (fetch + kezelés)
+    ├── login.js            → Login logika (fetch)
+    ├── register.js         → Regisztráció logika (fetch)
     └── dashboard.js        → Dashboard (fetch + lista renderelés)
 ```
 
@@ -41,7 +37,7 @@ projekt/
 
 ---
 
-### ✅ `users.json` – **Adattárolás**
+### `users.json` – **Adattárolás**
 ```json
 {
   "users": [
@@ -55,28 +51,28 @@ projekt/
 
 ---
 
-### ✅ `login.html` + `login.js`
+### `login.html` + `login.js`
 - **Bejelentkező felület**
 - Beküldi a felhasználónevet + jelszót a `/api/auth/login` endpointra
 - Siker esetén átirányít a `dashboard.html`-re
 
 ---
 
-### ✅ `register.html` + `register.js`
+### `register.html` + `register.js`
 - **Új felhasználó regisztráció**
 - Beküldi az adatokat a `/api/auth/register` endpointra
 - Siker esetén átirányít a `login.html`-re
 
 ---
 
-### ✅ `dashboard.html` + `dashboard.js`
+### `dashboard.html` + `dashboard.js`
 - **Felhasználói felület**
 - Betölti a `/api/users` endpointról az összes felhasználót
 - Kirendereli `<ul id="userList">` formában
 
 ---
 
-## 🔁 Adatforgalom (fetch hívások)
+## Adatforgalom (fetch hívások)
 
 | Frontend    | Endpoint               | HTTP metódus | Cél               |
 |-------------|------------------------|--------------|-------------------|
@@ -89,7 +85,7 @@ projekt/
 
 ## PROJEKT FILEOK
 
-server.js
+> server.js
 
 ```js
 const express = require("express");
@@ -213,7 +209,7 @@ app.listen(PORT, () => {
 });
 ```
 
-users.json
+> users.json
 
 ```json
 {
@@ -232,7 +228,7 @@ users.json
 
 ### public/
 
-login.html
+> login.html
 
 ```html
 <!DOCTYPE html>
@@ -263,7 +259,7 @@ login.html
 </html>
 ```
 
-dashboard.html
+> dashboard.html
 
 ```html
 <!DOCTYPE html>
@@ -288,7 +284,7 @@ dashboard.html
 </html>
 ```
 
-style.css
+> style.css
 
 ```css
 /* Alapértelmezett beállítások */
@@ -431,7 +427,7 @@ li:hover {
 }
 ```
 
-login.js
+> login.js
 
 ```js
 // document.getElementById("loginButton").addEventListener("click", () => {
@@ -443,7 +439,7 @@ login.js
 
 // });
 ```
-register.js
+> register.js
 
 ```js
 // document.getElementById("loginButton").addEventListener("click", () => {
@@ -456,7 +452,7 @@ register.js
 // });
 ```
 
-dashboard.js
+> dashboard.js
 
 ```js
 // const refreshUsers = () => {
