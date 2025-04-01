@@ -350,7 +350,7 @@ body::before {
   
   /* Animáció induló állapot */
   background-position: 0 0;
-  a
+  
   /* Hullámzó animáció beállítása */
   animation: dotswave 6s ease-in-out infinite;
   opacity: 0.8;
