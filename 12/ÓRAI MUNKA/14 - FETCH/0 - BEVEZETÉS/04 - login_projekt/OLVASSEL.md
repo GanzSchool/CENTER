@@ -96,8 +96,3 @@ Ami újdonság:
   - jelenítsd meg a `result.message` értékét
   - majd irány a dashboard oldal:  
     `window.location.href = "dashboard.html";`
-
----
-
-**Ennyi lenne a mai competition** 😄  
-Sok sikert, és bátran kérdezz, ha elakadsz!
