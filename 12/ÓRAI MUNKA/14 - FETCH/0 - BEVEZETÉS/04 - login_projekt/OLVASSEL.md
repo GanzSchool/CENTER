@@ -1,10 +1,3 @@
-## Sziasztok,  
-**az erő legyen veletek!** 💪✨  
-
-A mai órán az alábbi lesz a dolgotok — **ha András bá máshogy nem rendelkezik**, akkor így haladjatok.
-
----
-
 ### 🔗 Projekt linkje
 
 A lenti linken találjátok a projektet.  
