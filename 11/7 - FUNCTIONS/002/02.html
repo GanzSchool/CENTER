@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Function Expression Példa - Paraméterrel és Inline onclick</title>
+  <style>
+    /* Kreatív, modern megjelenés */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
+    }
+    .container {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 400px;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 12px 20px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      transition: box-shadow 0.3s ease;
+    }
+    input[type="text"]:focus {
+      outline: none;
+      box-shadow: 0 0 10px #fff;
+    }
+    button {
+      padding: 12px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #feb47b, #ff7e5f);
+    }
+    #result {
+      margin-top: 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Üdvözlés</h1>
+    <label for="userInput">Add meg a neved:</label><br>
+    <input type="text" id="userInput" placeholder="Írd be a neved">
+    <br>
+    <!-- Az onclick attribútumban CSAK a függvény neve szerepel -->
+    <button onclick="greetUser()">Küldés</button>
+    <div id="result">Itt fog megjelenni az üzenet</div>
+  </div>
+  
+  <script>
+    // Function Expression: greetUser névvel, amely egy paramétert vár (name)
+
+    
+  </script>
+</body>
+</html>
