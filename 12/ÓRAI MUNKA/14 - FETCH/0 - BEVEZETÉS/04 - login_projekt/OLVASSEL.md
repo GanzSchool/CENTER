@@ -1,10 +1,3 @@
-## Sziasztok,  
-**az erő legyen veletek!** 💪✨  
-
-A mai órán az alábbi lesz a dolgotok — **ha András bá máshogy nem rendelkezik**, akkor így haladjatok.
-
----
-
 ### 🔗 Projekt linkje
 
 A lenti linken találjátok a projektet.  
@@ -103,8 +96,3 @@ Ami újdonság:
   - jelenítsd meg a `result.message` értékét
   - majd irány a dashboard oldal:  
     `window.location.href = "dashboard.html";`
-
----
-
-**Ennyi lenne a mai competition** 😄  
-Sok sikert, és bátran kérdezz, ha elakadsz!
