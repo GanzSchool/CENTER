@@ -19,7 +19,7 @@ patient-app/
 ## ⚙️ Funkciók, és mire való
 
 ### `server.js` – **REST API szerver**
-- `POST /api/patient`  
+- `GET /api/patient`  
   🔹 Új páciens adatainak mentése  
   🔸 Használja: `script.js`
 
