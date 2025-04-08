@@ -5,9 +5,11 @@
 - Ezeken belül hozdd létre az egyes projektet gyökér mappáját 
 
 pl:
+```pgsql
 patient-app/
 ├── patient-app/               → első feladat
 ├── ticket-app/                → második feladat
+```
 
 - ha ezekkel megvagy hozzd létre a lenti instrukciók alapján az egyes webapplikációkat!
 
