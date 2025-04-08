@@ -31,7 +31,7 @@ projekt/
   🔹 Felhasználó bejelentkezése  
   🔸 Használja: `login.js`
 
-- `DELETE /api/users/:username`  
+- `DELETE /api/users`  
   🔹 Törli a megadott nevű felhasználót  
   🔸 (opcionálisan kezelhető dashboardon)
 
@@ -79,7 +79,7 @@ projekt/
 | login.js    | `/api/auth/login`      | POST         | Bejelentkezés     |
 | register.js | `/api/auth/register`   | POST         | Regisztráció      |
 | dashboard.js| `/api/users`           | GET          | Lista lekérése    |
-| (bővíthető)  | `/api/users/:username`| DELETE       | Felhasználó törlés|
+| (bővíthető)  | `/api/users          `| DELETE       | Felhasználó törlés|
 
 ---
 
@@ -294,23 +294,32 @@ app.listen(PORT, () => {
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <!-- CSP beállítás -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
   <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Dashboard</h1>
-    <h2>Registered Users</h2>
+
+    <h2>Regisztrált felhasználók</h2>
     <ul id="userList"></ul>
-    <button id="refreshButton">Refresh</button>
-    <p><a href="login.html">Logout</a></p>
+    <button id="refreshButton">Frissítés</button>
+
+    <hr style="margin: 20px 0;">
+
+    <h3>Felhasználó törlése</h3>
+    <input type="text" id="deleteUsername" placeholder="Felhasználónév">
+    <button id="deleteButton">Törlés</button>
+
+    <p style="margin-top: 20px;"><a href="login.html">Kijelentkezés</a></p>
   </div>
+
   <script src="dashboard.js"></script>
+  <script src="delete.js"></script>
 </body>
 </html>
 ```
@@ -496,6 +505,27 @@ li:hover {
 // document.getElementById("refreshButton").addEventListener("click", () => refreshUsers());
 // refreshUsers();
 ```
+
+> delete.js
+
+```js
+document.getElementById("deleteButton").addEventListener("click", () => {
+    const input = document.getElementById("deleteUsername").value;
+    
+    const username = {
+        username : input
+    }
+
+    if (!username) {
+      alert("Kérlek, add meg a törlendő felhasználó nevét!");
+      return;
+    }
+
+
+  
+
+```
+
 
 ## NODE környezet kialakítás
 

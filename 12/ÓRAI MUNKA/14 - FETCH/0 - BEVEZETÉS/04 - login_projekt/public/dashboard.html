@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <!-- CSP beállítás -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
   <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Dashboard</h1>
-    <h2>Registered Users</h2>
+
+    <h2>Regisztrált felhasználók</h2>
     <ul id="userList"></ul>
-    <button id="refreshButton">Refresh</button>
-    <p><a href="login.html">Logout</a></p>
+    <button id="refreshButton">Frissítés</button>
+
+    <hr style="margin: 20px 0;">
+
+    <h3>Felhasználó törlése</h3>
+    <input type="text" id="deleteUsername" placeholder="Felhasználónév">
+    <button id="deleteButton">Törlés</button>
+
+    <p style="margin-top: 20px;"><a href="login.html">Kijelentkezés</a></p>
   </div>
+
   <script src="dashboard.js"></script>
+  <script src="delete.js"></script>
 </body>
 </html>
