@@ -601,9 +601,9 @@ http://localhost:3002/ticket.html
 
 **Hozd létre az alábbi bejegyzést:**
 
-> `Teljes neved:` Írdd be a teljes neved
-> `Hiba:` hálózati probléma
-> `Prioritás:` magas
+- `Teljes neved:` Írdd be a teljes neved
+- `Hiba:` hálózati probléma
+- `Prioritás:` magas
 
 # LEADÁS
 
