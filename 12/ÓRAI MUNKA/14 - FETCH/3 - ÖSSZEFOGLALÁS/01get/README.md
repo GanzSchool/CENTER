@@ -63,7 +63,7 @@ var port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 
 // data.json kiszolgálása
-app.get('/api/patients', function(req, res) {
+app.get('/api/patient', function(req, res) {
   res.sendFile(path.join(__dirname, 'data.json'));
 });
 
