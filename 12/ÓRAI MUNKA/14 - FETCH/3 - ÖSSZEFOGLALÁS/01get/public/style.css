@@ -1,0 +1,79 @@
+/* Alap beállítások */
+body {
+    background: linear-gradient(to bottom right, #1b6b50, #14535c);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fehér sziget */
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+  }
+  
+  /* Gomb */
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #217dbb;
+    transform: scale(1.05);
+  }
+  
+  /* Páciensek adatait tartalmazó konténer */
+  #patientData {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  /* Görgetősáv stílusozása */
+  #patientData::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #patientData::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  #patientData::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  #patientData::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Páciens kártya */
+  .patient-card {
+    background: linear-gradient(to bottom right, #1c8ab6, #14535c);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    color: white;
+  }
+  

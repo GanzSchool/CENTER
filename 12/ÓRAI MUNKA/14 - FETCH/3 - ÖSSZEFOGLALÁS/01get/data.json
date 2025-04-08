@@ -1,0 +1,25 @@
+{
+    "patients": [
+      {
+        "name": "Kiss József",
+        "age": 45,
+        "diagnosis": "Magas vérnyomás"
+      },
+      {
+        "name": "Németh Ágnes",
+        "age": 32,
+        "diagnosis": "Cukorbetegség"
+      },
+      {
+        "name": "Tóth István",
+        "age": 50,
+        "diagnosis": "Asztma"
+      },
+      {
+        "name": "Kovács Erika",
+        "age": 28,
+        "diagnosis": "Allergia"
+      }
+    ]
+  }
+  
