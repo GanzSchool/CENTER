@@ -1,0 +1,14 @@
+{
+  "tickets": [
+    {
+      "title": "Nyomtató hiba",
+      "description": "A nyomtató nem indul el.",
+      "priority": "Magas"
+    },
+    {
+      "title": "Internet lelassulás",
+      "description": "Az internet kapcsolat lassú a hálózaton.",
+      "priority": "Közepes"
+    }
+  ]
+}
