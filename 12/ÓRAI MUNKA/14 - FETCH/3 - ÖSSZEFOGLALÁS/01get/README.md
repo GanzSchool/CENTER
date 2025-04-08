@@ -19,7 +19,7 @@ patient-app/
 ## ⚙️ Funkciók, és mire való
 
 ### `server.js` – **REST API szerver**
-- `POST /api/patient`  
+- `GET /api/patient`  
   🔹 Új páciens adatainak mentése  
   🔸 Használja: `script.js`
 
@@ -63,7 +63,7 @@ var port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 
 // data.json kiszolgálása
-app.get('/api/patients', function(req, res) {
+app.get('/api/patient', function(req, res) {
   res.sendFile(path.join(__dirname, 'data.json'));
 });
 
