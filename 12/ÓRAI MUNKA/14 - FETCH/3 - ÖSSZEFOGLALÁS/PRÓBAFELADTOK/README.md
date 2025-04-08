@@ -405,7 +405,7 @@ app.post("/api/ticket", function(req, res) {
 });
 
 app.listen(PORT, function() {
-  console.log("Szerver fut a http://localhost:" + PORT + " címen");
+  console.log(`Szerver fut a http://localhost:${PORT}/ticket.html`);
 });
 ```
 
