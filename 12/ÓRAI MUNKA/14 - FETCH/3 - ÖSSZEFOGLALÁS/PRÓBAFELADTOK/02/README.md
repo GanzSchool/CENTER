@@ -49,6 +49,8 @@ patient-app/
 
 ### 🧩 PROJEKT FILEOK
 
+> `public/index.html`
+
 ```html
 <!DOCTYPE html>
 <html lang="hu">
@@ -67,6 +69,8 @@ patient-app/
 </body>
 </html>
 ```
+
+> `public/style.css`
 
 ```css
 /* Alap beállítások */
@@ -148,6 +152,7 @@ button:hover {
     color: white;
 }
 ```
+> `public/script.js`
 
 ```js
 document.getElementById("loadButton").addEventListener("click", function() {
@@ -194,6 +199,8 @@ document.getElementById("loadButton").addEventListener("click", function() {
   });
 ```
 
+> `server.js`
+
 ```js
 var express = require('express');
 var path = require('path');
@@ -213,6 +220,8 @@ app.listen(port, function() {
   console.log(`Szerver fut a http://localhost:${port}`);
 });
 ```
+
+> `data.json`
 
 ```json
 {
@@ -270,6 +279,8 @@ ticket-app/
 
 ### 🧩 PROJEKT FILEOK
 
+> `public/index.html`
+
 ```html
 <!DOCTYPE html>
 <html lang="hu">
@@ -303,6 +314,8 @@ ticket-app/
 </body>
 </html>
 ```
+
+> `public/style.css`
 
 ```css
 body {
@@ -368,6 +381,8 @@ button:hover {
 }
 ```
 
+> `public/script.js`
+
 ```js
 document.getElementById("sendButton").addEventListener("click", () => {
   
@@ -399,6 +414,8 @@ document.getElementById("sendButton").addEventListener("click", () => {
 
 
 ```
+
+> `server.js`
 
 ```js
 const express = require("express");
@@ -444,6 +461,8 @@ app.listen(PORT, () => {
 });
 ```
 
+> `tickets.json`
+
 ```json
 {
   "registrations": []
@@ -483,6 +502,8 @@ garden-app/
 
 ### 🧩 PROJEKT FILEOK
 
+> `public/index.html`
+
 ```html
 <!DOCTYPE html>
 <html lang="hu">
@@ -506,6 +527,8 @@ garden-app/
 </body>
 </html>
 ```
+
+> `public/style.css`
 
 ```css
 /* Alap stílusok a teljes oldalra */
@@ -578,6 +601,8 @@ body {
   }
 ```
 
+> `public/script.js`
+
 ```js
 document.getElementById("deleteButton").addEventListener("click", () => {
   
@@ -599,6 +624,8 @@ document.getElementById("deleteButton").addEventListener("click", () => {
       // Hiba esetén jelenjen meg ez az alert: "Hiba történt a küldés során!"
   });
 ```
+
+> `server.js`
 
 ```js
 const express = require("express");
@@ -654,6 +681,8 @@ app.listen(PORT, () => {
   console.log(`Szerver fut a http://localhost:${PORT} címen`);
 });
 ```
+
+> `garden.json`
 
 ```json
 {
