@@ -11,8 +11,8 @@ Ezen belül 3 projekt gyökérmappát:
 
 ```bash
 kissbela/
-├── courses-app/         # Páciens adatlekérő rendszer
-├── registration-app/    # IT ticket beküldő rendszer
+├── courses-app/         # Egyetemi kurzus rendszer
+├── registration-app/    # Jelentkezés beküldő rendszer
 ├── garden-app/          # Virtuális kert – növény törlés
 ```
 
