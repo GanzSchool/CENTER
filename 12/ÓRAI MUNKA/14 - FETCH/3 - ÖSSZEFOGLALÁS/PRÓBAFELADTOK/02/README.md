@@ -24,6 +24,8 @@ kissbela/
 - Ahol kéri a feladat végezd el a szükséges tesztelést.
 - Törekedj a rendezet kód kialakításához.
 
+  oldal link: https://ganzschool.github.io/Materials/docs/Webprogramoz%C3%A1s/JavaScript/03%20Halad%C3%B3/14.0%20FETCH%20API/
+
 ---
 
 ## 1️⃣ Projekt: **Egyetemi kurzus rendszer**  
