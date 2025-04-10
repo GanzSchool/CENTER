@@ -11,8 +11,8 @@ Ezen belül 3 projekt gyökérmappát:
 
 ```bash
 kissbela/
-├── patient-app/         # Páciens adatlekérő rendszer
-├── ticket-app/          # IT ticket beküldő rendszer
+├── courses-app/         # Páciens adatlekérő rendszer
+├── registration-app/    # IT ticket beküldő rendszer
 ├── garden-app/          # Virtuális kert – növény törlés
 ```
 
@@ -26,13 +26,13 @@ kissbela/
 
 ---
 
-## 1️⃣ Projekt: **Páciens Adatlekérő rendszer**  
-`patient-app/`
+## 1️⃣ Projekt: **Egyetemi kurzus rendszer**  
+`courses-app/`
 
 ### 📁 Mappaszerkezet
 
 ```bash
-patient-app/
+courses-app/
 ├── server.js
 ├── data.json
 └── public/
@@ -45,7 +45,7 @@ patient-app/
 
 | Endpoint        | Metódus | Cél                    |
 |-----------------|---------|------------------------|
-| `/api/patient`  | `GET`   | Páciensek adatainak lekérdezése |
+| `/api/courses`  | `GET`   | Egyetemi kurzusok lekérdezése |
 
 ### 🧩 PROJEKT FILEOK
 
@@ -256,13 +256,13 @@ app.listen(port, function() {
 
 ---
 
-## 2️⃣ Projekt: **IT Ticket Beküldő rendszer**  
-`ticket-app/`
+## 2️⃣ Projekt: **Jelentkezés beküldő rendszer**  
+`registration-app/`
 
 ### 📁 Mappaszerkezet
 
 ```bash
-ticket-app/
+registration-app/
 ├── server.js
 ├── tickets.json
 └── public/
@@ -275,7 +275,7 @@ ticket-app/
 
 | Endpoint       | Metódus | Cél                     |
 |----------------|---------|--------------------------|
-| `/api/ticket`  | `POST`  | Új hiba bejelentés beküldése |
+| `/api/registration`  | `POST`  | Új hiba bejelentés beküldése |
 
 ### 🧩 PROJEKT FILEOK
 
