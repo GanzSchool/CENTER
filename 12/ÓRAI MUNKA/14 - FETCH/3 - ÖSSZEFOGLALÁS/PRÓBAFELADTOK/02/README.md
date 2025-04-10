@@ -266,7 +266,7 @@ registration-app/
 ├── server.js
 ├── tickets.json
 └── public/
-    ├── ticket.html
+    ├── index.html
     ├── style.css
     └── script.js
 ```
