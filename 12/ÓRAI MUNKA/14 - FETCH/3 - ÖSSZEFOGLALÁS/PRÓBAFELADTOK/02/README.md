@@ -265,7 +265,7 @@ app.listen(port, function() {
 ```bash
 registration-app/
 ├── server.js
-├── registration.json
+├── registrations.json
 └── public/
     ├── index.html
     ├── style.css
@@ -462,7 +462,7 @@ app.listen(PORT, () => {
 });
 ```
 
-> `registration.json`
+> `registrations.json`
 
 ```json
 {
