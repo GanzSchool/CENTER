@@ -11,8 +11,8 @@ Ezen belül 3 projekt gyökérmappát:
 
 ```bash
 kissbela/
-├── patient-app/         # Páciens adatlekérő rendszer
-├── ticket-app/          # IT ticket beküldő rendszer
+├── courses-app/         # Egyetemi kurzus rendszer
+├── registration-app/    # Jelentkezés beküldő rendszer
 ├── garden-app/          # Virtuális kert – növény törlés
 ```
 
@@ -24,15 +24,16 @@ kissbela/
 - Ahol kéri a feladat végezd el a szükséges tesztelést.
 - Törekedj a rendezet kód kialakításához.
 
+
 ---
 
-## 1️⃣ Projekt: **Páciens Adatlekérő rendszer**  
-`patient-app/`
+## 1️⃣ Projekt: **Egyetemi kurzus rendszer**  
+`courses-app/`
 
 ### 📁 Mappaszerkezet
 
 ```bash
-patient-app/
+courses-app/
 ├── server.js
 ├── data.json
 └── public/
@@ -45,7 +46,7 @@ patient-app/
 
 | Endpoint        | Metódus | Cél                    |
 |-----------------|---------|------------------------|
-| `/api/patient`  | `GET`   | Páciensek adatainak lekérdezése |
+| `/api/courses`  | `GET`   | Egyetemi kurzusok lekérdezése |
 
 ### 🧩 PROJEKT FILEOK
 
@@ -256,17 +257,17 @@ app.listen(port, function() {
 
 ---
 
-## 2️⃣ Projekt: **IT Ticket Beküldő rendszer**  
-`ticket-app/`
+## 2️⃣ Projekt: **Jelentkezés beküldő rendszer**  
+`registration-app/`
 
 ### 📁 Mappaszerkezet
 
 ```bash
-ticket-app/
+registration-app/
 ├── server.js
-├── tickets.json
+├── registrations.json
 └── public/
-    ├── ticket.html
+    ├── index.html
     ├── style.css
     └── script.js
 ```
@@ -275,7 +276,7 @@ ticket-app/
 
 | Endpoint       | Metódus | Cél                     |
 |----------------|---------|--------------------------|
-| `/api/ticket`  | `POST`  | Új hiba bejelentés beküldése |
+| `/api/registration`  | `POST`  | Új hiba bejelentés beküldése |
 
 ### 🧩 PROJEKT FILEOK
 
@@ -461,7 +462,7 @@ app.listen(PORT, () => {
 });
 ```
 
-> `tickets.json`
+> `registrations.json`
 
 ```json
 {
@@ -736,6 +737,24 @@ npm install express
 ```bash
 node server.js
 ```
+
+---
+
+## ❤️ Segédanyag
+
+```js
+fetch('URL', {
+  method: '...',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(...)
+})
+.then(a => a.json())
+.then(b => {})
+.catch(c => {});
+```
+
 
 ---
 
