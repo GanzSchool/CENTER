@@ -265,7 +265,7 @@ app.listen(port, function() {
 ```bash
 registration-app/
 ├── server.js
-├── tickets.json
+├── registration.json
 └── public/
     ├── index.html
     ├── style.css
