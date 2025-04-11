@@ -462,7 +462,7 @@ app.listen(PORT, () => {
 });
 ```
 
-> `tickets.json`
+> `registration.json`
 
 ```json
 {
