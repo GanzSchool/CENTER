@@ -740,7 +740,7 @@ node server.js
 
 ---
 
-## Segédanyag
+## ❤️ Segédanyag
 
 ```js
 fetch('URL', {
