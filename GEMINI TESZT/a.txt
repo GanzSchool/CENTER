@@ -1,9 +1,0 @@
-C:\Users\csuka\doga\a1;hoplita1
-C:\Users\csuka\doga\a2;hoplita2
-C:\Users\csuka\doga\a3;hoplita3
-C:\Users\csuka\doga\a4;hoplita4
-C:\Users\csuka\doga\a5;hoplita5
-C:\Users\csuka\doga\a6;hoplita6
-
-
-            
