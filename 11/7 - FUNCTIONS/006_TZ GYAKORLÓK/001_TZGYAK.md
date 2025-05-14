@@ -1,8 +1,8 @@
 # TÉMAZÁRÓ GYAKORLÓ 001
 
-- Mindegy egyes feladatot külön JavaScript fileban kell - megcsinálni.
+- Mindegy egyes feladatot külön JavaScript fileban kell megcsinálni.
 - Minden feladatot úgy kell elnevezni, ahogy a feladat írja, mert különben egyes.
-- A 4 db kész filet be kell csomagolni és a teljes nevedd kell, hogy legyen a mappa neve teljesen kis betűkkel elválasztás és ékezet nélkül. (Pl.: Kiss Béla -> kiss_bela)
+- A 4 db kész filet be kell csomagolni és a teljes neved kell, hogy legyen a mappa neve kis betűkkel elválasztás és ékezet nélkül. (Pl.: Kiss Béla -> kiss_bela)
 - Segítséget nem lehet igénybevenni.
 - A képernyő rögzítésre kerül.
 
